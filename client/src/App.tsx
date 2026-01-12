@@ -44,7 +44,7 @@ function Home() {
       </section>
 
       {/* Section 3: White background section, shorter than section 2 */}
-      <section className="h-[300px] w-full bg-white" />
+      <section className="h-[250px] w-full bg-white" />
     </div>
   );
 }
