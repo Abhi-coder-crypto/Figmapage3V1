@@ -6,11 +6,18 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 
 function Home() {
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full items-center bg-white">
+      {/* Section 1: White Background, full screen */}
       <section className="h-screen w-full bg-white" />
+      
+      {/* Section 2: Specific dimensions and color */}
       <section 
-        className="h-screen w-full"
-        style={{ backgroundColor: "#0A67AE" }}
+        className="flex-shrink-0"
+        style={{ 
+          width: "1080px", 
+          height: "435.8px",
+          backgroundColor: "#0A67AE" 
+        }}
       />
     </div>
   );
