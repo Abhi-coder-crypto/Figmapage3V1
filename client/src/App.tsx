@@ -4,7 +4,8 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import logo from "@assets/Rectangle_(4)_1768210660121.png";
-import { Camera } from "lucide-react";
+import cameraIcon from "@assets/0bd2bf3a-866f-4f23-922e-1e68f9314bc8_1768211186631.png";
+import recIcon from "@assets/Vector_(3)_1768211179428.png";
 
 function Home() {
   return (
@@ -46,15 +47,22 @@ function Home() {
 
       {/* Section 3: White background section with Social Media Posts content */}
       <section className="h-[250px] w-full bg-white relative flex items-center justify-center overflow-hidden">
-        {/* REC indicator at top right */}
-        <div className="absolute top-8 right-8 flex items-center gap-2">
-          <div className="w-3 h-3 bg-red-600 rounded-full animate-pulse" />
-          <span className="font-bold text-lg tracking-wider text-black">REC</span>
-        </div>
+        <div className="relative flex items-center gap-4 md:gap-6">
+          {/* REC indicator at top right of the text area */}
+          <div className="absolute -top-12 -right-4 flex items-center">
+            <img 
+              src={recIcon} 
+              alt="REC" 
+              className="h-8 md:h-10 w-auto"
+            />
+          </div>
 
-        {/* Center Content: Camera and Text */}
-        <div className="flex items-center gap-4 md:gap-6">
-          <Camera className="w-10 h-10 md:w-14 md:h-14 text-black stroke-[1.5]" />
+          {/* Center Content: Camera and Text */}
+          <img 
+            src={cameraIcon} 
+            alt="Camera" 
+            className="w-12 h-12 md:w-16 md:h-16 object-contain"
+          />
           <h2 className="text-4xl md:text-6xl text-[#0A67AE] font-normal tracking-tight">
             Social Media Posts
           </h2>
