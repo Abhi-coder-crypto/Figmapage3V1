@@ -29,7 +29,7 @@ function Home() {
         }}
       >
         <div className="max-w-4xl mx-auto text-white space-y-6">
-          <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
+          <h1 className="text-3xl md:text-5xl font-normal leading-tight">
             Crafting a Cinematic Visual Identity<br />
             for Mango Maniac Films
           </h1>
@@ -42,6 +42,9 @@ function Home() {
           </p>
         </div>
       </section>
+
+      {/* Section 3: White background section, shorter than section 2 */}
+      <section className="h-[300px] w-full bg-white" />
     </div>
   );
 }
