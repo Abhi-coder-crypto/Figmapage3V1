@@ -85,7 +85,7 @@ function Home() {
             src={img1} 
             alt="Project 1" 
             style={{ width: "764.91px", height: "318.71px" }} 
-            className="object-cover rounded-3xl shadow-lg" 
+            className="object-cover rounded-3xl shadow-lg border-2 border-black" 
           />
         </div>
       </section>
@@ -99,14 +99,14 @@ function Home() {
           backgroundSize: "contain"
         }}
       >
-        <img src={img2} alt="Project 2" style={{ width: "764.91px", height: "566.56px" }} className="object-cover rounded-3xl shadow-lg" />
-        <img src={img3} alt="Project 3" style={{ width: "764.91px", height: "318.71px" }} className="object-cover rounded-3xl shadow-lg" />
-        <img src={img4} alt="Project 4" style={{ width: "764.91px", height: "566.56px" }} className="object-cover rounded-3xl shadow-lg" />
-        <img src={img5} alt="Project 5" style={{ width: "764.91px", height: "318.71px" }} className="object-cover rounded-3xl shadow-lg" />
+        <img src={img2} alt="Project 2" style={{ width: "764.91px", height: "566.56px" }} className="object-cover rounded-3xl shadow-lg border-2 border-black" />
+        <img src={img3} alt="Project 3" style={{ width: "764.91px", height: "318.71px" }} className="object-cover rounded-3xl shadow-lg border-2 border-black" />
+        <img src={img4} alt="Project 4" style={{ width: "764.91px", height: "566.56px" }} className="object-cover rounded-3xl shadow-lg border-2 border-black" />
+        <img src={img5} alt="Project 5" style={{ width: "764.91px", height: "318.71px" }} className="object-cover rounded-3xl shadow-lg border-2 border-black" />
         
         {/* Last image partially out of the section */}
         <div className="translate-y-16">
-          <img src={img6} alt="Project 6" style={{ width: "764.91px", height: "566.56px" }} className="object-cover rounded-3xl shadow-lg" />
+          <img src={img6} alt="Project 6" style={{ width: "764.91px", height: "566.56px" }} className="object-cover rounded-3xl shadow-lg border-2 border-black" />
         </div>
       </section>
 
