@@ -55,8 +55,8 @@ function Home() {
       </section>
 
       {/* Section 3: White background section with Social Media Posts content */}
-      <section className="h-[250px] w-full bg-white relative flex items-center justify-center overflow-hidden">
-        <div className="relative flex items-center">
+      <section className="h-[250px] w-full bg-white relative flex items-center justify-center">
+        <div className="relative flex items-center mt-[-40px]">
           {/* Main Content: Camera and Text */}
           <div className="flex items-center gap-4 md:gap-6">
             <img 
@@ -78,24 +78,40 @@ function Home() {
             />
           </div>
         </div>
+
+        {/* First image overlapping from Section 4 into Section 3 - Pushed further down */}
+        <div className="absolute bottom-0 translate-y-[60%] z-20">
+          <img 
+            src={img1} 
+            alt="Project 1" 
+            style={{ width: "764.91px", height: "318.71px" }} 
+            className="object-cover rounded-3xl shadow-lg" 
+          />
+        </div>
       </section>
 
       {/* Section 4: Grid background section with project images */}
       <section 
-        className="w-full bg-repeat py-20 flex flex-col items-center gap-8"
+        className="w-full bg-repeat pt-[280px] pb-20 flex flex-col items-center gap-8 relative overflow-visible"
         style={{ 
           minHeight: "2594.84px",
           backgroundImage: `url(${gridBg})`,
           backgroundSize: "contain"
         }}
       >
-        <img src={img1} alt="Project 1" style={{ width: "764.91px", height: "318.71px" }} className="object-cover rounded-3xl shadow-lg" />
         <img src={img2} alt="Project 2" style={{ width: "764.91px", height: "566.56px" }} className="object-cover rounded-3xl shadow-lg" />
         <img src={img3} alt="Project 3" style={{ width: "764.91px", height: "318.71px" }} className="object-cover rounded-3xl shadow-lg" />
         <img src={img4} alt="Project 4" style={{ width: "764.91px", height: "566.56px" }} className="object-cover rounded-3xl shadow-lg" />
         <img src={img5} alt="Project 5" style={{ width: "764.91px", height: "318.71px" }} className="object-cover rounded-3xl shadow-lg" />
-        <img src={img6} alt="Project 6" style={{ width: "764.91px", height: "566.56px" }} className="object-cover rounded-3xl shadow-lg" />
+        
+        {/* Last image partially out of the section */}
+        <div className="translate-y-16">
+          <img src={img6} alt="Project 6" style={{ width: "764.91px", height: "566.56px" }} className="object-cover rounded-3xl shadow-lg" />
+        </div>
       </section>
+
+      {/* Section 5: White background section, height 1.5x of first section (500px * 1.5 = 750px) */}
+      <section className="h-[750px] w-full bg-white" />
     </div>
   );
 }
