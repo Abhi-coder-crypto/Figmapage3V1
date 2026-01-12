@@ -48,24 +48,26 @@ function Home() {
       {/* Section 3: White background section with Social Media Posts content */}
       <section className="h-[250px] w-full bg-white relative flex items-center justify-center overflow-hidden">
         <div className="relative flex items-center gap-4 md:gap-6">
-          {/* REC indicator at top right of the text area */}
-          <div className="absolute -top-12 -right-4 flex items-center">
+          {/* Main Content: Camera and Text */}
+          <div className="flex items-center gap-4 md:gap-6">
+            <img 
+              src={cameraIcon} 
+              alt="Camera" 
+              className="w-12 h-12 md:w-16 md:h-16 object-contain"
+            />
+            <h2 className="text-4xl md:text-6xl text-[#0A67AE] font-normal tracking-tight">
+              Social Media Posts
+            </h2>
+          </div>
+
+          {/* REC indicator at top right of the overall section (absolute to container) */}
+          <div className="absolute -top-16 -right-16 flex items-center">
             <img 
               src={recIcon} 
               alt="REC" 
-              className="h-8 md:h-10 w-auto"
+              className="h-10 md:h-12 w-auto"
             />
           </div>
-
-          {/* Center Content: Camera and Text */}
-          <img 
-            src={cameraIcon} 
-            alt="Camera" 
-            className="w-12 h-12 md:w-16 md:h-16 object-contain"
-          />
-          <h2 className="text-4xl md:text-6xl text-[#0A67AE] font-normal tracking-tight">
-            Social Media Posts
-          </h2>
         </div>
       </section>
     </div>
