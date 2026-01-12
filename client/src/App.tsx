@@ -7,8 +7,8 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 function Home() {
   return (
     <div className="flex flex-col w-full items-center bg-white min-h-screen">
-      {/* Section 1: White Background, reduced height */}
-      <section className="h-[20vh] w-full bg-white" />
+      {/* Section 1: White Background, slightly larger than the second section */}
+      <section className="h-[500px] w-full bg-white" />
       
       {/* Section 2: Mobile and Desktop compatible width */}
       <section 
