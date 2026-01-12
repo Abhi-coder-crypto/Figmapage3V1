@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import logo from "@assets/Rectangle_(4)_1768210660121.png";
 import cameraIcon from "@assets/0bd2bf3a-866f-4f23-922e-1e68f9314bc8_1768211186631.png";
 import recIcon from "@assets/Vector_(3)_1768211179428.png";
+import gridBg from "@assets/Clip_path_group_1768211457122.png";
 
 function Home() {
   return (
@@ -70,6 +71,16 @@ function Home() {
           </div>
         </div>
       </section>
+
+      {/* Section 4: Grid background section with specific height */}
+      <section 
+        className="w-full bg-repeat"
+        style={{ 
+          height: "2594.84px",
+          backgroundImage: `url(${gridBg})`,
+          backgroundSize: "contain"
+        }}
+      />
     </div>
   );
 }
