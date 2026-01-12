@@ -8,6 +8,14 @@ import cameraIcon from "@assets/0bd2bf3a-866f-4f23-922e-1e68f9314bc8_17682111866
 import recIcon from "@assets/Vector_(3)_1768211179428.png";
 import gridBg from "@assets/Clip_path_group_1768211457122.png";
 
+// Import project images
+import img1 from "@assets/Group_(4)_1768211769177.png";
+import img2 from "@assets/Clip_path_group_(1)_1768211769176.png";
+import img3 from "@assets/Clip_path_group_(2)_1768211769176.png";
+import img4 from "@assets/Clip_path_group_(3)_1768211769176.png";
+import img5 from "@assets/Clip_path_group_(4)_1768211769175.png";
+import img6 from "@assets/Clip_path_group_(5)_1768211769174.png";
+
 function Home() {
   return (
     <div className="flex flex-col w-full items-center bg-white min-h-screen font-sans overflow-x-hidden">
@@ -72,15 +80,22 @@ function Home() {
         </div>
       </section>
 
-      {/* Section 4: Grid background section with specific height */}
+      {/* Section 4: Grid background section with project images */}
       <section 
-        className="w-full bg-repeat"
+        className="w-full bg-repeat py-20 flex flex-col items-center gap-8"
         style={{ 
-          height: "2594.84px",
+          minHeight: "2594.84px",
           backgroundImage: `url(${gridBg})`,
           backgroundSize: "contain"
         }}
-      />
+      >
+        <img src={img1} alt="Project 1" style={{ width: "764.91px", height: "318.71px" }} className="object-cover rounded-3xl shadow-lg" />
+        <img src={img2} alt="Project 2" style={{ width: "764.91px", height: "566.56px" }} className="object-cover rounded-3xl shadow-lg" />
+        <img src={img3} alt="Project 3" style={{ width: "764.91px", height: "318.71px" }} className="object-cover rounded-3xl shadow-lg" />
+        <img src={img4} alt="Project 4" style={{ width: "764.91px", height: "566.56px" }} className="object-cover rounded-3xl shadow-lg" />
+        <img src={img5} alt="Project 5" style={{ width: "764.91px", height: "318.71px" }} className="object-cover rounded-3xl shadow-lg" />
+        <img src={img6} alt="Project 6" style={{ width: "764.91px", height: "566.56px" }} className="object-cover rounded-3xl shadow-lg" />
+      </section>
     </div>
   );
 }
